@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Using the Object</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <!-- <button type="button" onclick="fullname">Click</button> -->
+    <script>
+      const person = {
+        first_name: "Jitixa",
+        last_name: "Kothiya",
+        id: 1,
+        fullName: function () {
+          return this.first_name + " " + this.last_name;
+        },
+      };
+
+      document.getElementById("demo").innerHTML = person.fullName();
+
+      document.getElementById("demo").innerHTML =
+        person.first_name + "  " + person.last_name;
+    </script>
+  </body>
+</html>
