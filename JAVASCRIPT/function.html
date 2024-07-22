@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Function Declartions</title>
+    <script>
+      "use strict";
+      function myFirstFunction() {
+        //alert("Hello my name is jitixa");
+        console.log("Hello my name is jitixa");
+      }
+      myFirstFunction();
+      function fruitOption(apple, mango) {
+        console.log(apple, mango);
+        const juice = `Juice with ${apple} apples and ${mango} mango.`;
+        return juice;
+      }
+      const resultOfruit = fruitOption(5, 10);
+      console.log(resultOfruit);
+
+      // Function Declaration
+      function myAgeCalculation(birthYear) {
+        return 2040 - birthYear;
+      }
+      const ageResult1 = myAgeCalculation(1995);
+
+      // Function Expression
+      const AgeCount = function (birthYear) {
+        return 2040 - birthYear;
+      };
+      const ageResult2 = AgeCount(1996);
+      console.log(ageResult1, ageResult2);
+    </script>
+    <script>
+      //Arrow Function
+      const YearOfRetirement = (birthYear, firstname) => {
+        const age = 2040 - birthYear;
+        const retirement = 65 - age;
+        return `${firstname} retirement is ${retirement}`;
+      };
+      console.log(YearOfRetirement(1995, "Jitixa"));
+      console.log(YearOfRetirement(1996, "Puni"));
+    </script>
+  </head>
+  <body></body>
+</html>

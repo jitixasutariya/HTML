@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Function Calling Other Fumction</title>
+    <script>
+      function addExtraFruit(fruit) {
+        return fruit * 4;
+      }
+      function FruitJuice(apple, mango, kiwi) {
+        const appl_extra = addExtraFruit(apple);
+        const mango_extra = addExtraFruit(mango);
+        const kiwi_extra = addExtraFruit(kiwi);
+
+        const juices = `Three differnt fruites juices ${appl_extra} add extra apple , ${mango_extra} add extra mango , ${kiwi_extra} add extra kiwi`;
+        return juices;
+      }
+      console.log((freshFruitJuice = FruitJuice(1, 2, 4)));
+    </script>
+  </head>
+  <body></body>
+</html>
